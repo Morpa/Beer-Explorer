@@ -2,22 +2,6 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
 
-export const parameters = {
-  backgrounds: {
-    default: 'beer-light',
-    values: [
-      {
-        name: 'beer-light',
-        value: theme.colors.white
-      },
-      {
-        name: 'beer-dark',
-        value: theme.colors.mainBg
-      }
-    ]
-  }
-}
-
 export const decorators = [
   (Story) => (
     <>
