@@ -1,15 +1,16 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.header`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-between;
     padding: ${theme.spacings.small} 0;
-    position: relative;
-    z-index: ${theme.layers.menu};
-    border-bottom: 1px solid ${theme.colors.gray};
+    z-index: ${theme.layers.base};
+    border-bottom: 2px solid ${theme.colors.secondary};
+    margin: 0 ${theme.spacings.xsmall};
   `}
 `
 
@@ -22,7 +23,7 @@ export const IconWrapper = styled.div`
 
     > svg {
       display: block;
-      width: 2rem;
+      width: 3rem;
     }
   }
 

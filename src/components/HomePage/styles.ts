@@ -16,10 +16,13 @@ export const PaginationLink = styled.a`
     flex: 1;
     display: block;
     padding: ${theme.spacings.xsmall};
-    background: ${theme.colors.white};
+    background: ${theme.colors.secondary};
     width: 100%;
     text-align: center;
     color: inherit;
     text-decoration: none;
+    margin-bottom: 3rem;
+    color: ${theme.colors.white};
+    border-radius: ${theme.border.radius};
   `}
 `

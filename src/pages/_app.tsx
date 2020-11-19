@@ -1,6 +1,7 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
+import { AnimatePresence } from 'framer-motion'
 
 import GlobalStyles from 'styles/global'
 import theme from 'styles/theme'
@@ -16,7 +17,9 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="The best beers in the world!" />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <AnimatePresence>
+        <Component {...pageProps} />
+      </AnimatePresence>
     </ThemeProvider>
   )
 }

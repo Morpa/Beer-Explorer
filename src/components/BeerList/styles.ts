@@ -10,6 +10,8 @@ export const ListWrapper = styled.ul`
 
 export const ListItem = styled.li`
   ${({ theme }) => css`
+    list-style: none;
+
     a {
       line-height: 1.5;
       padding: ${theme.spacings.xxsmall};
