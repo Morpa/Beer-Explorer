@@ -1,6 +1,6 @@
 {
-  "name": "Beer Explorer",
-  "short_name": "Beer Explorer",
+  "name": "Beers Explorer",
+  "short_name": "Beers Explorer",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092B",
-  "description": "Beer Explorer!",
+  "description": "Beers Explorer!",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092B"

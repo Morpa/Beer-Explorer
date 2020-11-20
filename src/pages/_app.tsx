@@ -29,7 +29,7 @@ function App({ Component, pageProps }: AppProps) {
           images: [
             {
               url:
-                'https://res.cloudinary.com/morpa/image/upload/v1605887249/MyFiles/ico_rck6vr.png'
+                'https://res.cloudinary.com/morpa/image/upload/v1605889529/MyFiles/ico_yxdgv2.png'
             }
           ],
           site_name: 'Beers Explorer',
