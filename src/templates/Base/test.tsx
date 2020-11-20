@@ -22,10 +22,10 @@ jest.mock('components/Header', () => {
 })
 
 describe('<Base />', () => {
-  it('should render the heading', () => {
+  it('should render the base component', () => {
     renderWithTheme(
       <Base>
-        <h1>Heading</h1>
+        <h1>Content</h1>
       </Base>
     )
 

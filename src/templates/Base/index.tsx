@@ -15,11 +15,13 @@ const Base = ({ children }: BaseTemplateProps) => {
   const [isVisible, setIsVisible] = useState(true)
   const router = useRouter()
 
+  const route = router ? router.pathname : ''
+
   useEffect(() => {
-    if (['/beer/[beerId]', '/search'].includes(router.pathname)) {
+    if (['/beer/[beerId]', '/search'].includes(route)) {
       setIsVisible(false)
     }
-  }, [router.pathname, isVisible])
+  }, [route, isVisible])
 
   return (
     <>
