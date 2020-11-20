@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import { ThemeProvider } from 'styled-components'
 import { AnimatePresence } from 'framer-motion'
 
@@ -17,6 +18,29 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="The best beers in the world!" />
       </Head>
+      <NextSeo
+        title="Beers Explorer"
+        description="The best beers in the world!"
+        canonical="https://beers-explorer.vercel.app/"
+        openGraph={{
+          url: 'https://beers-explorer.vercel.app/',
+          title: 'Beers Explorer',
+          description: 'The best beers in the world!',
+          images: [
+            {
+              url:
+                'https://res.cloudinary.com/morpa/image/upload/v1605887249/MyFiles/ico_rck6vr.png'
+            }
+          ],
+          site_name: 'Beers Explorer',
+          locale: 'pt_BR'
+        }}
+        twitter={{
+          handle: '@MorpaDre',
+          site: '@site',
+          cardType: 'summary_large_image'
+        }}
+      />
       <GlobalStyles />
       <AnimatePresence>
         <Component {...pageProps} />
