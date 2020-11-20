@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { GetServerSideProps } from 'next'
-import axios from 'axios'
 import { motion } from 'framer-motion'
 
 import BeerList from 'components/BeerList'
@@ -9,6 +8,8 @@ import Base from 'templates/Base'
 import { PaginationLayout, PaginationLink } from 'components/HomePage/styles'
 import { useScrollRestoration } from 'hooks/useScrollRestoration'
 import { Beer } from 'types/Beer'
+
+import api from 'services/api'
 
 type HomePageProps = {
   beers: Beer[]
@@ -52,9 +53,7 @@ export const getServerSideProps: GetServerSideProps<HomePageProps> = async (
   context
 ) => {
   const currentPage = context.query.page ? Number(context.query.page) : 1
-  const response = await axios.get<Beer[]>(
-    `https://api.punkapi.com/v2/beers?page=${currentPage}`
-  )
+  const response = await api.get<Beer[]>(`beers?page=${currentPage}`)
 
   return {
     props: {

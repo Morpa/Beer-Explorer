@@ -7,6 +7,7 @@ export const TopWrapper = styled.div`
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: ${theme.layers.base};
   `}
 `
 
