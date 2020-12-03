@@ -21,15 +21,15 @@ function App({ Component, pageProps }: AppProps) {
       <NextSeo
         title="Beers Explorer"
         description="The best beers in the world!"
-        canonical="https://morpa.vercel.app/"
+        canonical="https://beers-explorer.vercel.app/"
         openGraph={{
-          url: 'https://morpa.vercel.app/',
+          url: 'https://beers-explorer.vercel.app/',
           title: 'Beers Explorer',
           description: 'The best beers in the world!',
           images: [
             {
               url:
-                'https://res.cloudinary.com/morpa/image/upload/v1606985396/MyFiles/Morpa_qrqyfj.png'
+                'https://res.cloudinary.com/morpa/image/upload/v1605889529/MyFiles/ico_yxdgv2.png'
             }
           ],
           site_name: 'Beers Explorer',
