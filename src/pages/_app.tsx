@@ -32,7 +32,7 @@ function App({ Component, pageProps }: AppProps) {
                 'https://res.cloudinary.com/morpa/image/upload/v1606985396/MyFiles/Morpa_qrqyfj.png'
             }
           ],
-          site_name: 'Morpa',
+          site_name: 'Beers Explorer',
           locale: 'pt_BR'
         }}
         twitter={{
